@@ -420,10 +420,6 @@ fun! libview#SOBrowse(libfile)
 "   call Decho("------  ------  ------ ")
   endwhile
 
-  " final cleanup
-"  call Decho("final cleanup: g/^[ABTUa-z]\s/d")
-  silent g/^[ABTUa-z]\s/d
-
   " prepare to return: setting preparation and restoration
   2
   setlocal noma nomod ro fdm=marker
